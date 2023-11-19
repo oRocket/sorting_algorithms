@@ -34,6 +34,7 @@ void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 void merge_sort_recursive(int *array, int left, int right);
 void merge(int *arr, int left, int mid, int right);
+void heap_sort(int *array, size_t size);
 
 
 #endif /* sort.h */
