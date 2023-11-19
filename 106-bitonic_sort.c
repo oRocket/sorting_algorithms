@@ -21,10 +21,12 @@ void bitonic_merge(int *array, size_t low, size_t count, int dir)
 			if ((array[i] > array[i + k]) == dir)
 			{
 				int temp = array[i];
+
 				array[i] = array[i + k];
 				array[i + k] = temp;
 
-				printf("Merging [%lu/%lu] (%s):\n", count, count * 2, (dir == 1) ? "UP" : "DOWN");
+				printf("Merging [%lu/%lu] (%s):\n", count, count * 2,
+						(dir == 1) ? "UP" : "DOWN");
 				print_array(array, count * 2);
 			}
 		}
@@ -56,8 +58,8 @@ void bitonic_sort_recursive(int *array, size_t low, size_t count, int dir)
 }
 
 /**
- * bitonic_sort - Sorts an array of integers in ascending order using bitonic sort.
- *
+ * bitonic_sort - Sorts an array of integers in
+ * ascending order using bitonic sort.
  * @array: The array to be sorted
  * @size: Number of elements in @array
  */
