@@ -9,8 +9,8 @@
  */
 void counting_sort(int *array, size_t size)
 {
-	int *count, index, max = array[0];
-	size_t i;
+	int *count, max = array[0];
+	size_t i, index;
 
 	if (array == NULL || size < 2)
 		return;
