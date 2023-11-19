@@ -35,5 +35,9 @@ size_t list_len(listint_t *list);
 void merge(int *array, int low, int mid, int high);
 void merge_sort(int *array, size_t size);
 
+void swap_ints(int *a, int *b);
+int lomuto_partition(int *array, size_t size, int left, int right);
+void lomuto_sort(int *array, size_t size, int left, int right);
+
 
 #endif /* sort.h */
